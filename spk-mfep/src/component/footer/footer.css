@@ -1,0 +1,58 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--primary1);
+    bottom: 0;
+    margin-top: 5rem;
+    padding: 3rem;
+    gap: 2rem;
+    position: relative;
+    color: var(--primary5);
+}
+
+.kontak {
+    display: flex;
+    gap: 10rem;
+}
+
+.sub_kontak {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 150px;
+}
+
+.kontak_ikon {
+    background: var(--primary4);
+    color: var(--neutral1);
+    padding: 1.5rem;
+    border-radius: 50px;
+}
+
+.kontak_link {
+    text-decoration: none;
+}
+
+.copyright {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    border-top: 1px solid var(--primary3);
+    width: 100vw;
+    padding-top: 1.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .kontak {
+        gap: 5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .kontak {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}

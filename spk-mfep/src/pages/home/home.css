@@ -9,7 +9,6 @@
     height: fit-content;
     padding: 0 1.5rem;
     color: var(--primary5);
-    /* box-shadow: 0 0.2rem 0.2rem var(--neutral2); */
 }
 
 .about_tulisan {
@@ -48,7 +47,6 @@
 .konsen {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     background-color: var(--primary2);
     border-radius: 20px;
     color: var(--primary5);
@@ -99,6 +97,6 @@
     }
 
     .konsen {
-        width: 180px;
+        width: 85%;
     }
 }

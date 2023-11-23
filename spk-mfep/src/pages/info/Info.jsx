@@ -8,7 +8,7 @@ const Info = () => {
   const [isAnalisis, setIsAnalisis] = useState(false);
   const [isKomputasi, setIsKomputasi] = useState(false);
   const [isStatistik, setIsStatistik] = useState(false);
-  const [isTerapan, setIsTerapan] = useState(true);
+  const [isTerapan, setIsTerapan] = useState(false);
 
   const onAljabar = () => {
     setIsAljabar(!isAljabar);

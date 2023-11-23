@@ -30,20 +30,31 @@
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
-    color: var(--neutral1);
+    color: var(--primary5);
 }
 
 .link:hover {
-    color: var(--primary5);
+    color: var(--neutral1);
 }
 
 .link_sm {
     display: none;
 }
 
+@media screen and (max-width: 1024px) {
+    .link,
+    .logo {
+        font-size: 18px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .nav_container {
         width: var(--container-width-sm);
+    }
+
+    .nav_menu {
+        gap: 0.5rem;
     }
 
     .link {
@@ -52,6 +63,10 @@
 
     .link_sm {
         display: block;
+        color: var(--primary5);
+    }
+
+    .link_sm:hover {
         color: var(--neutral1);
     }
 }

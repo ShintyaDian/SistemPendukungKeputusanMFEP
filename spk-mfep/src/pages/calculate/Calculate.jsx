@@ -99,7 +99,6 @@ const Calculate = () => {
       ];
       const sortedArr = arrEval.sort((a, b) => b.eval - a.eval);
       setHasil(sortedArr);
-      console.log(sortedArr);
     }
   };
 

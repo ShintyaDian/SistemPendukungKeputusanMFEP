@@ -80,7 +80,7 @@ const Info = () => {
           <li>Pengantar Teori Modul</li>
           <li>Teori Operator</li>
         </ul>
-        <strong>Prospek Kerja:</strong>
+        <strong>Contoh Prospek Kerja:</strong>
         <ul>
           <li>Matematikawan atau Ahli Aljabar</li>
           <li>Pengembang Algoritma Matematis</li>
@@ -117,14 +117,12 @@ const Info = () => {
           <li>Kalkulus Vektor</li>
           <li>Teori Wavelet</li>
         </ul>
-        <strong>Prospek Kerja:</strong>
+        <strong>Contoh Prospek Kerja:</strong>
         <ul>
-          <li>Analisis Data Scientist</li>
-          <li>Spesialis Bisnis</li>
-          <li>Analisis Keuangan</li>
-          <li>Analisis Kinerja Operasional</li>
-          <li>Analisis Keamanan Cyber</li>
-          <li>Ahli Riset Pasar</li>
+          <li>Analisis Matematika</li>
+          <li>Pengembangan Algoritma</li>
+          <li>Pengajar Matematika</li>
+          <li>Penelitian Keamanan Informasi</li>
         </ul>
       </div>
 
@@ -154,10 +152,9 @@ const Info = () => {
           <li>Pemrograman Perangkat Bergerak</li>
           <li>Pemrograman Web Lanjut</li>
         </ul>
-        <strong>Prospek Kerja:</strong>
+        <strong>Contoh Prospek Kerja:</strong>
         <ul>
-          <li>Pengembang Perangkat Lunak</li>
-          <li>Insinyur Machine Learning</li>
+          <li>Machine Learning</li>
           <li>Data Scientist</li>
           <li>Software Engineer</li>
           <li>QA Engineer</li>
@@ -191,7 +188,7 @@ const Info = () => {
           <li>Pengantar Proses Stokastik</li>
           <li>Inferensi Bayes</li>
         </ul>
-        <strong>Prospek Kerja:</strong>
+        <strong>Contoh Prospek Kerja:</strong>
         <ul>
           <li>Konsultan Statistik</li>
           <li>Ilmuwan Data Statistik</li>
@@ -231,7 +228,7 @@ const Info = () => {
           <li>Persamaan Diferensial Parsial Lanjut</li>
           <li>Metode Numerik untuk Persamaan Diferensial Parsial</li>
         </ul>
-        <strong>Prospek Kerja:</strong>
+        <strong>Contoh Prospek Kerja:</strong>
         <ul>
           <li>Spesialis Optimasi</li>
           <li>Ilmuwan Data Terapan</li>

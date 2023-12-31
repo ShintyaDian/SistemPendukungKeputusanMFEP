@@ -1,6 +1,17 @@
 import React, { useState } from "react";
 import "./calculate.css";
-import { Button, MenuItem, TextField } from "@mui/material";
+import {
+  Button,
+  MenuItem,
+  Paper,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
+  TextField,
+} from "@mui/material";
 import { toast } from "react-toastify";
 
 const Calculate = () => {
@@ -91,11 +102,14 @@ const Calculate = () => {
         minatTerapan * bobotMinat;
 
       const arrEval = [
-        { eval: evalAljabar, konsen: "ALJABAR" },
-        { eval: evalAnalisis, konsen: "ANALISIS" },
-        { eval: evalKomputasi, konsen: "PEREKAYASA PERANGKAT LUNAK" },
-        { eval: evalStatistik, konsen: "STATISTIKA" },
-        { eval: evalTerapan, konsen: "TERAPAN" },
+        { eval: Math.round(evalAljabar * 1000) / 1000, konsen: "Aljabar" },
+        { eval: Math.round(evalAnalisis * 1000) / 1000, konsen: "Analisis" },
+        {
+          eval: Math.round(evalKomputasi * 1000) / 1000,
+          konsen: "Perekayasa Perangkat Lunak",
+        },
+        { eval: Math.round(evalStatistik * 1000) / 1000, konsen: "Statistika" },
+        { eval: Math.round(evalTerapan * 1000) / 1000, konsen: "Terapan" },
       ];
       const sortedArr = arrEval.sort((a, b) => b.eval - a.eval);
       setHasil(sortedArr);
@@ -117,6 +131,11 @@ const Calculate = () => {
     setNilaiMatDis(0);
     setNilaiGraph(0);
     setNilaiPDB(0);
+    setMinatAljabar(3);
+    setMinatAnalisis(3);
+    setMinatKomputasi(3);
+    setMinatStatistik(3);
+    setMinatTerapan(3);
     setHasil([]);
   };
 
@@ -444,14 +463,29 @@ const Calculate = () => {
         </Button>
       </div>
       <div className="hasil_container">
-        <div className="hasil_1">
-          <h2>Hasil Rekomendasi 1: </h2>
-          <h3>{hasil.length > 0 && hasil[0].konsen}</h3>
-        </div>
-        <div className="hasil_2">
-          <h2>Hasil Rekomendasi 2: </h2>
-          <h3>{hasil.length > 0 && hasil[1].konsen}</h3>
-        </div>
+        <h2>Hasil Perhitungan MFEP</h2>
+        <TableContainer component={Paper}>
+          <Table sx={{ minWidth: 600 }} aria-label="simple table">
+            <TableHead>
+              <TableRow>
+                <TableCell>NO.</TableCell>
+                <TableCell>KONSENTRASI</TableCell>
+                <TableCell>HASIL</TableCell>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              {hasil.map((row, index) => (
+                <TableRow key={index}>
+                  <TableCell component="th" scope="row">
+                    {index + 1}
+                  </TableCell>
+                  <TableCell>{row.konsen}</TableCell>
+                  <TableCell>{row.eval}</TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </TableContainer>
       </div>
     </div>
   );
